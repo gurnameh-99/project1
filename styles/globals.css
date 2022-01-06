@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 body {
   background: #fff;
   margin: 0;
@@ -10,6 +9,22 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+nav {
+  margin: 35px 100px 10px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 12px;
+}
+nav .logo {
+  margin-right: auto;
 }
 header {
   text-align: center;

@@ -1,6 +1,5 @@
 import { createClient } from 'contentful'
 import BlogCard from '../components/BlogCard'
-import Navbar from '../components/Navbar'
 export async function getStaticProps() {
 
   const client = createClient({
@@ -19,7 +18,6 @@ export async function getStaticProps() {
 
 export default function Blogs({ blogs }) {
   return (
-
     <><header>
         <a>
           <h1>
