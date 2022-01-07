@@ -54,13 +54,15 @@ export default function BlogCard({ blog }) {
         }
         .info h4 {
           margin: 4px 0;
-          font-size: 1.5rem
+          font-size: 1.5rem;
+          font-weight: 400
           
         }
         .info p {
           margin: 0;
           color: #777;
           font-size: 1rem;
+          // font-weight: 350
         }
         .actions {
           margin-top: 5px;

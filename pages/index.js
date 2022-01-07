@@ -1,45 +1,49 @@
-import { createClient } from 'contentful'
-import BlogCard from '../components/BlogCard'
-import Navbar from '../components/Navbar'
-export async function getStaticProps() {
-
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-  })
-
-  const res = await client.getEntries({ content_type: 'blog' })
-
-  return {
-    props: {
-      blogs: res.items,
-    }
-  }
-}
-
-export default function Blogs({ blogs }) {
+import { Button } from '@material-ui/core'
+import Link from 'next/link'
+export default function Home() {
   return (
-
-    <><header>
-        <a>
-          <h1>
-            #talesbyAkshat
-          </h1>
-          {/* <h2>Spread The Joy</h2> */}
-        </a>
-      
-    </header>
-    <div className="blog-list">
-        {blogs.map(blog => (
-          <BlogCard key={blog.sys.id} blog={blog} />
-        ))}
-        <style jsx>{`
-        .blog-list{
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          grid-gap: 3rem 2rem;
+    <div className="title1">
+      <h2>Hi, I'm Akshat Mohindra!</h2>
+      <h3>An experienced sales professional, husband to a Professor, father of two kids and son to an amazing set of parents.</h3>
+      <div>
+      <Link href="/about" passHref>
+      <Button variant="outlined" style={{
+        backgroundColor: "#050505",
+        color: "#fff",
+        textTransform: 'none',
+        padding: '10px 70px',
+        fontSize: "18px"
+    }}size="large" >About Me</Button>
+      </Link>
+      </div>
+      <h2>Get in Touch</h2>
+      <h3>My inbox is open for collaborations</h3>
+      <Link href="mailto:akshatmohindra@gmail.com" passHref>
+      <Button variant="outlined" style={{
+        backgroundColor: "#050505",
+        color: "#fff",
+        textTransform: 'none',
+        padding: '10px 70px',
+        fontSize: "18px"
+    }}size="large" >Say Hello</Button>
+      </Link>
+      <style jsx>{`
+        .title1 {
+          text-align: center;
+          margin: 40px 20px;
+        }
+        .title1 h2{
+          font-weight: 500
+        }
+        .title1 h3{
+          font-weight: 400
         }
       `}</style>
-      </div></>
+      
+
+
+    </div>
+
+    
   )
 }

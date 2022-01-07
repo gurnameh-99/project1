@@ -38,7 +38,7 @@ export const getStaticProps = async ({ params }) => {
 export default function BlogDetails({ blog }) {
   const { featured, title, datetime, content } = blog.fields
   return (
-    <div>
+    <div className="main">
       <div className="banner">
       
         <Image 
@@ -59,9 +59,12 @@ export default function BlogDetails({ blog }) {
       </div>
 
       <style jsx>{`
-        h2,h3 {
+      .main{
+        // margin: 40px 40px 40px;
+      }
+        h2{
           text-transform: uppercase;
-          
+          font-weight: 500;
         }
         image.center {
           display: block;
@@ -95,6 +98,7 @@ export default function BlogDetails({ blog }) {
         .content{
           font-size: 1.2em;
           text-decoration: none;
+          font-weight: 350;
         }
       `}</style>
     </div>
