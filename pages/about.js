@@ -92,6 +92,7 @@ export default function About(){
                 <Chrono
                 items={items}
                 mode="VERTICAL_ALTERNATING"
+                scrollable
                 hideControls
                 theme={{ 
                     primary: "grey",
