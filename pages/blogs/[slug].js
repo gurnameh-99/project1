@@ -59,9 +59,6 @@ export default function BlogDetails({ blog }) {
       </div>
 
       <style jsx>{`
-      .main{
-        // margin: 40px 40px 40px;
-      }
         h2{
           text-transform: uppercase;
           font-weight: 500;
@@ -73,24 +70,13 @@ export default function BlogDetails({ blog }) {
 
         .banner  {
           text-align: center;
-        // display: flex;
-        // flex-direction: centre;
-        // // align-items: stretch;
-        // justifyContent: centre;
-        //   margin: 20px;
-        //   background: #000;
-        //   display: inline-block;
-        //   padding: 60px;
-        //   top: -60px;
-        //   left: -10px;
-        //   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
         }
         .info p {
-          margin: 0 3%;;
+          margin: 0 3%;
           text-align: right; 
         }
         .info span::after {
-          content: ", ";
+          content: ",";
         }
         .info span:last-child::after {
           content: ".";
