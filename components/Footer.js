@@ -6,7 +6,7 @@ const Footer = () =>{
       <div className="bottom-bar">
           <Link href="/"><a>Home</a></Link>
           <Link href="/about"><a>About</a></Link>
-          <Link href="/projects"><a>#talesbyAkshat</a></Link>
+          <Link href="/blogs"><a>#talesbyAkshat</a></Link>
           <Link href="mailto:hello@shellbear.me"><a>Contact</a></Link>
       <style jsx>{`
         // .bottom-bar{

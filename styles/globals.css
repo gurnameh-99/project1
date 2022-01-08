@@ -77,3 +77,15 @@ footer {
   box-sizing: border-box;
   /* font-size: 1.5em; */
 }
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 60%;
+}
